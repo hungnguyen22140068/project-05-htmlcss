@@ -1043,26 +1043,29 @@ button {
   transition: all 0.5s ease;
 }
 
+.testimorial-item__review::before,
 .testimorial-item__review::after {
   position: absolute;
   content: "";
-  display: block;
-  width: 75px;
-  height: 75px;
-  border: 1px solid;
-  border-color: transparent transparent #dfe2e8 #dfe2e8;
-  background: #fff;
-  left: 49%;
-  bottom: -12px;
-  transform: translateX(-50%);
-  rotate: -45deg;
-  transition: all 0.5s ease;
+  display: inline-block;
+  border: 50px solid;
+  border-color: #fff transparent transparent transparent;
+  left: 50%;
+  top: calc(100% - 1px);
+  translate: -50%;
+}
+
+.testimorial-item__review::after {
+  border-color: #dfe2e8 transparent transparent transparent;
+  top: 100%;
+  translate: -50%;
+  z-index: -1;
+  transition: border-color 0.25s;
 }
 
 .testimorial-item__review:hover,
 .testimorial-item__review:hover::after {
-  background: #fff;
-  border-color: #fff;
+  border-color: transparent;
   filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
   cursor: pointer;
 }
