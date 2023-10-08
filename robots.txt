@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /dang-ky.html
+Disallow: /dang-nhap.html
+
+Sitemap: https://hungnguyen22140068.github.io/project-05-htmlcss/sitemap.xml
